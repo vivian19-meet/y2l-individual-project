@@ -1,0 +1,21 @@
+<html>
+    <head>       <link rel="stylesheet" type="text/css" href="search.css"></head>
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+    <body>
+        <ul class="nav nav-tabs" style="background-color: white">
+            <li class="nav-item" style="color:gray">
+                  <a class="nav-link" href="{{url_for('home')}}"> Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{{url_for('search')}}"> Search </a>
+              </li>
+    </ul>
+        <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        {% if add %}
+            <a  href="{{url_for('addd')}}" class="add_btn">add</a>
+        {% endif %}
+    </body>
+</html>

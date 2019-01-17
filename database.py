@@ -1,5 +1,4 @@
 from models import *
-
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -8,5 +7,8 @@ Base.metadata.create_all(engine)
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
-def function(parameter):
-    pass
+def add_elder(name,location, feilds):
+    print("Added an university!")
+    university = University(name=name,location=location, feilds=feilds)
+    session.add(university)
+    session.commit()

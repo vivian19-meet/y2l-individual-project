@@ -8,3 +8,11 @@ Base = declarative_base()
 # Write your classes here :
 class Product(Base):
     pass
+Base = declarative_base()
+class university(Base):
+    __tablename__ = "universities"
+    id = Column(Integer, primary_key = True)
+    name = Column(String)
+    location = Column(String)
+    fields =Column(list)
+   

@@ -1,0 +1,25 @@
+<html>
+    <head>        <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css"></head>
+</head></html>
+<body>
+    <ul class="nav nav-tabs" style="background-color: white">
+        <li class="nav-item" style="color:gray">
+              <a class="nav-link" href="{{url_for('home')}}"> Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="{{url_for('search')}}"> Search </a>
+          </li>
+</ul>
+    <h>please insert youre code!</h>
+    <form  method="POST">
+        <br>
+        <h1>Log In as admin</h1>
+        <input type="text" name="code" id="code" placeholder="admin code" required><br>
+        <input type="submit" value="Log In">
+        <br>
+    </form>
+    
+</body>
+
+
+</html>

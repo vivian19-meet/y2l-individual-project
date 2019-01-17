@@ -1,0 +1,22 @@
+
+.nav-link{
+    color: gray;
+}
+.nav-link:hover{
+    color:black;
+    }
+h1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    color:#1b5a1f;
+    font-size: 60px;
+    text-decoration: none;
+    top:60px;
+    left:150px;
+    padding: 10px 25px;
+    background-color: rgba(54, 185, 71, 0.699);
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.411);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+}
