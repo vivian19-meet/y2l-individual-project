@@ -10,12 +10,16 @@
                   <a class="nav-link" href="{{url_for('search')}}"> Search </a>
               </li>
     </ul>
-        <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        <form class="form-inline" method="POST" >
+                <input class="form-control mr-sm-2"  type="search" name="search" placeholder="Search">
                 <button class="btn btn-outline-light" type="submit">Search</button>
         </form>
         {% if add %}
             <a  href="{{url_for('addd')}}" class="add_btn">add</a>
         {% endif %}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
     </body>
 </html>
+
+<!--class="form-inline"-->

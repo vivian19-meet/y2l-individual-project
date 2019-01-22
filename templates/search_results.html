@@ -1,0 +1,22 @@
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="static/css/search.css">
+</head>
+
+<body>
+    {%for u in universities %}
+    <br>
+    <div id="results">
+        <form action="/un_info/{{ u.id }}" method="GET">
+            <input type="submit" value= "{{ u.name }} ">
+        </form>
+
+        <br>
+    </div>
+    <br>
+    {% endfor %}
+</body>
+
+
+</html>
