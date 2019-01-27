@@ -1,4 +1,12 @@
-
+body{
+    
+    background: url(admbg.jpg) ;
+    background-size: 1290px 740px;
+    color:rgb(167, 135, 95);
+}
+#adminbar{
+    border:2px 2px burlywood;
+}
 .nav-link{
     color: gray;
 }

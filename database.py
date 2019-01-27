@@ -1,6 +1,8 @@
 from model import *
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+
+
 engine = create_engine('sqlite:///database.db')
 Base.metadata.create_all(engine)
 DBSession = sessionmaker(bind=engine)
@@ -10,9 +12,9 @@ def if_in_list(x,fields):
         b=fields.index(x)
         return True
 
-def add_univ(name,location, fields):
+def add_univ(name,location, fields,logo,link):
     print("Added an university!")
-    university = University(name=name,location=location, fields=fields)
+    university = University(name=name,location=location, fields=fields, logo=logo, link=link)
     session.add(university)
     session.commit()
 def get_univ_by_field(field):
@@ -27,3 +29,8 @@ def get_univ_by_id(id):
     University).filter_by(
     id=id).first()
     return university
+
+def delete_univ_by_id(id):
+    session.query(University).filter_by(
+    id=id).delete()
+    session.commit()

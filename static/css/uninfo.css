@@ -1,0 +1,12 @@
+body{
+    color: blueviolet;
+}
+.nav-link{
+    color: gray;
+}
+.nav-link:hover{
+    color:black;
+    }
+#name{
+    font: 20px arial, sans-serif;
+}

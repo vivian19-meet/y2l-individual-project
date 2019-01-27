@@ -1,4 +1,9 @@
+body{
 
+    background: url(searchTbg.jpg) ;
+    background-size: 1300px 630px;
+    
+}
 .nav-link{
     color: gray;
 }
@@ -20,6 +25,39 @@ h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 20px;
 }
+.add{
+    background-image: url('images/abstract_art_black_and_white_red_wallpaper_1080p_hd.jpg');
+    border-radius: 10px;
+    font-family: Forte;
+    color: black;
+    font-size: 34px;
+    padding: 5px 5px 5px 5px;
+    border-width: 0px;
+    width: 10px ;
+        
+    top:150px;
+	color: black;
+	text-decoration: none;
+	font: 20px arial, sans-serif;
+	color: whitesmoke;
+	font-size: 25px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 17px;
+    height: 200px;
+    bottom: 150px;
+}
+.add:hover{
+    background-color:gray;
+    color:black;
+}
+#search{
+    top: 191px;
+    left: 4200px;
+    right: -420px;
+    bottom: -191px;
+}
 #results{
     margin-left:480px;
     padding-left:10px;
@@ -27,10 +65,8 @@ h1{
     color: white;
     text-shadow: 2px 2px 4px #504c4c;
     width: 250px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
-    background-color: rgba(87, 153, 197, 0.61);
+
+    
 }
 
-#results:hover  {
-    background-color: rgba(87, 153, 197, 0.61);
-}
+

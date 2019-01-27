@@ -16,6 +16,7 @@ class University(Base):
     name = Column(String)
     location = Column(String)
     fields =Column(PickleType)
-    link = Column(String)
     logo = Column(String)
+    link = Column(String)
+
    

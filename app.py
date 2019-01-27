@@ -6,7 +6,7 @@ from database import *
 app = Flask(__name__)
 
 add= False
-code= "vivi"
+code= "my code"
 @app.route('/')
 def home():
     return render_template('home.html' ,add=add)
@@ -20,7 +20,7 @@ def log_out():
 def un_info(id):
     u = get_univ_by_id(id)
 
-    return render_template('univ_info.html',u=u)
+    return render_template('univ_info.html',u=u,add=add)
 
 
 @app.route('/adminC', methods=["GET",'POST'])
@@ -36,8 +36,8 @@ def adminC():
 @app.route('/123456787654321345678534678hsdanarlsknrlibigjk',methods=["GET",'POST'])
 def addd():
     if request.method=="POST":
-        add_univ(request.form["name"],request.form["location"],request.form["fields"])
-
+        add_univ(request.form["name"],request.form["location"],
+        request.form["fields"],request.form["logo"],request.form["link"])
         return render_template("add.html")
     else:
         return render_template("add.html")
@@ -56,7 +56,12 @@ def search():
         universities = get_univ_by_field(fields)
         return render_template('search_results.html',universities=universities)
     return render_template('search.html',add=add)
-
+@app.route('/delete/<id>',methods=['GET', 'POST'],)
+def delete(id):
+    if request.method == 'GET':
+        delete_univ_by_id(id)
+        return redirect('/search')
+    return redirect('/search_results')
 '''
 @app.route('/searchA', )
 def searchA():

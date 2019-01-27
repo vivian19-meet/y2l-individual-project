@@ -16,19 +16,44 @@
                       <a class="nav-link" href="{{url_for('search')}}"> Search </a>
                   </li>
         </ul>
+        <div class="title">
         <h1 id="title">Academic <br>        Consistency</h1>
+        <style>
+            div.title {
+              position: fixed;
+              bottom: 160;
+              right: 520;
+              width: 300px;
+
+              
+            }
+            </style>
+        </div>
         <!--Navbar-->
         <nav class="navbar navbar-dark fb-color">
       </nav>     
       <!--Navbar End-->
-      
+      <div id="srbtn">
+        <a id="adm" href="/search" class="adm">search</a>
+        <style>div#srbtn{ position: fixed; left:600px ; bottom: 100px; top: 500;  width:200px ,200px ;}
+        </style>
+    </div>
+    <div id="hmbtn">
+        <a id="adm" href="/" class="adm">home</a>
+        <style>div#hmbtn{ position: fixed; left:1000px ; bottom: 100px; top: 500;  width:200px ,200px ;}
+        </style>
+    </div>
         {% if add %}
-            <div >
-                <a class="adm" href="/log_out" >log out</a>
+            <div id="outbtn">
+                <a id="adm" class="adm" href="/log_out" >log out</a>
+                <style>div#outbtn{ position: fixed; left:100px ; bottom: 100px; top: 500;  width:200px ,200px ;}
+                </style>
             </div>
         {% else %}
         <div id="adbtn">
             <a id="adm" href="/adminC" class="adm">admin</a>
+            <style>div#adbtn{ position: fixed; left:100px ; bottom: 100px; top: 500;  width:200px ,200px ;}
+            </style>
         </div>
         {% endif %}
     </body>

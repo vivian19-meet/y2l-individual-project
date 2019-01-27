@@ -2,14 +2,25 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="static/css/search.css">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="static/css/results.css">
 </head>
 
 <body>
+
+                <ul class="nav nav-tabs" style="background-color: white">
+                    <li class="nav-item" style="color:gray">
+                          <a class="nav-link" href="{{url_for('home')}}"> Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{url_for('search')}}"> Search </a>
+                      </li>
+            </ul>
     {%for u in universities %}
     <br>
     <div id="results">
         <form action="/un_info/{{ u.id }}" method="GET">
-            <input type="submit" value= "{{ u.name }} ">
+            <input class="btn btn-outline-light" type="submit" value= "{{ u.name }} ">
         </form>
 
         <br>

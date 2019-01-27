@@ -1,5 +1,7 @@
 <html>
-    <head>        <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css"></head>
+    <head>        <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="static/css/admin.css">
+    </head></head>
 </head></html>
 <body>
     <ul class="nav nav-tabs" style="background-color: white">
@@ -10,15 +12,42 @@
               <a class="nav-link" href="{{url_for('search')}}"> Search </a>
           </li>
 </ul>
-    <h>please insert youre code!</h>
+<div class="adminbar">
+<div class="adminbar" id="pic">
+    <img  src="/static/css/book.png" width="80px" height="40px">
+</div>
+<style>div#pic{position: fixed;  top: 70px;  left: 580px; }</style>
     <form  method="POST">
         <br>
-        <h1>Log In as admin</h1>
-        <input type="text" name="code" id="code" placeholder="admin code" required autocomplete="off"><br>
-        <input type="submit" value="Log In">
+        <br>
+        <h1>Log In as admin</h1><br><br>
+        <input class="form-control mr-sm-2"  type="text" name="code" id="code" placeholder="admin code" required autocomplete="off"><br>
+        <br>
+        <br>
+        <div id="log_in" >
+        <input  class="btn btn-outline-light" type="submit" value="Log In">
         <br>
     </form>
-    
+</div>
+</div>
+    <style>
+        div.adminbar {
+          position: fixed;
+          border: 1px 1px 1px 1px burlywood;
+          bottom: 210;
+          right: 520;
+          width: 300px;}
+    </style>
+
+     <style>
+            div#log_in {
+                position: fixed;
+              bottom: 210;
+              right: 450;
+              width: 300px;
+            }
+        </style>
+
 </body>
 
 

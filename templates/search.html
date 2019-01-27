@@ -1,5 +1,5 @@
 <html>
-    <head>       <link rel="stylesheet" type="text/css" href="search.css"></head>
+    <head>       <link rel="stylesheet" type="text/css" href="static/css/search.css"></head>
     <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
     <body>
         <ul class="nav nav-tabs" style="background-color: white">
@@ -10,15 +10,25 @@
                   <a class="nav-link" href="{{url_for('search')}}"> Search </a>
               </li>
     </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="search">
         <form class="form-inline" method="POST" >
-                <input class="form-control mr-sm-2"  type="search" name="search" placeholder="Search">
-                <button class="btn btn-outline-light" type="submit">Search</button>
+                <input class="form-control mr-sm-2"  
+                type="search" name="search" placeholder="Search" autocomplete="off">
+                <button class="btn-outline-light" type="submit">Search</button>
         </form>
+    </div >
+    <div id="add">
         {% if add %}
-            <a  href="{{url_for('addd')}}" class="add_btn">add</a>
+            <a  href="{{url_for('addd')}}" id="adm" class="add">add</a>
         {% endif %}
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <style>div#add{ position: fixed; left:100px ;  top: 100;  width:200px ,200px ;}
+        </style>
+    </div>
     </body>
 </html>
 
