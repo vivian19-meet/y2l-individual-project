@@ -1,12 +1,40 @@
-body{
-    color: blueviolet;
-}
+
 .nav-link{
     color: gray;
+    font-size:16px;
 }
 .nav-link:hover{
     color:black;
     }
+#link{
+        color: rgb(29, 46, 30);
+        
+    }
+#link:hover{
+        color:rgb(107, 107, 107);
+        }
 #name{
-    font: 20px arial, sans-serif;
+    font: 80px arial, sans-serif;
+    top:100px;
 }
+#all{
+    left: 1px;
+}
+.container{
+    right: 10px;
+}
+#info{
+    left: 70px;
+    border-style: solid;
+    border-width: 5px;
+    
+}
+.carousel {
+    width:640px;
+    height:360px;
+  }
+  .carousel-inner > .item > img {
+    width:640px;
+    height:360px;
+  }
+    

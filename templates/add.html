@@ -2,6 +2,10 @@
     <head>     <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="static/css/add.css">
     </head>
+    <style>.form-control mr-sm-2{
+        position: fixed;
+        right: 400px;
+    } </style>
     <body>
 
         <ul class="nav nav-tabs" style="background-color: white">
@@ -11,12 +15,17 @@
               <li class="nav-item">
                   <a class="nav-link" href="{{url_for('search')}}"> Search </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{url_for('test')}}"> test </a>
+            </li>
     </ul>
-        <form method="POST">
-          <input type="text" name="name"  placeholder="name"> <br>
-          <input type="text" name="location" placeholder="location"> <br>
-          <input type="list" name="fields" placeholder="fields" >   <br>
-          <input type="text" name="logo" placeholder="link to logo pic"> <br>
-          <input type="text" name="link" placeholder="link to actual web" > <br> 
-          <input type="submit" value="Add">
+    <br><br>
+        <form    form class="form-inli" method="POST">
+          <input class="form-control mr-sm-2"  type="text" name="name"  placeholder="name"> <br><br>
+          <input type="text" name="location" class="form-control mr-sm-2"   placeholder="location"> <br>
+          <input type="list" name="fields" class="form-control mr-sm-2"  placeholder="fields" >   <br>
+          <input type="text" name="logo" class="form-control mr-sm-2"  placeholder="link to logo pic"> <br>
+          <input type="text" name="link" class="form-control mr-sm-2"  placeholder="link to actual web" > <br> 
+          <input type="text" name="pics" class="form-control mr-sm-2"  placeholder="links to pics" > <br> 
+          <input class="btn-outline-light" type="submit" value="Add">
         </form> </body>

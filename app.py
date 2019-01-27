@@ -19,9 +19,10 @@ def log_out():
 @app.route('/un_info/<id>')
 def un_info(id):
     u = get_univ_by_id(id)
-
     return render_template('univ_info.html',u=u,add=add)
-
+@app.route('/test')
+def test():
+    return render_template('test.html')
 
 @app.route('/adminC', methods=["GET",'POST'])
 def adminC():
@@ -29,15 +30,14 @@ def adminC():
     if request.method=="POST":
         if(code == request.form["code"]):
             add=True
-            return redirect('/')
-            
+            return redirect('/')     
     return render_template('adminC.html')
 
 @app.route('/123456787654321345678534678hsdanarlsknrlibigjk',methods=["GET",'POST'])
 def addd():
     if request.method=="POST":
         add_univ(request.form["name"],request.form["location"],
-        request.form["fields"],request.form["logo"],request.form["link"])
+        request.form["fields"],request.form["logo"],request.form["link"],request.form["pics"].split(","))
         return render_template("add.html")
     else:
         return render_template("add.html")
@@ -62,6 +62,7 @@ def delete(id):
         delete_univ_by_id(id)
         return redirect('/search')
     return redirect('/search_results')
+
 '''
 @app.route('/searchA', )
 def searchA():

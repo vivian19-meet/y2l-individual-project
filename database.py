@@ -12,9 +12,9 @@ def if_in_list(x,fields):
         b=fields.index(x)
         return True
 
-def add_univ(name,location, fields,logo,link):
+def add_univ(name,location, fields,logo,link,pics):
     print("Added an university!")
-    university = University(name=name,location=location, fields=fields, logo=logo, link=link)
+    university = University(name=name,location=location, fields=fields, logo=logo, link=link ,pics=pics)
     session.add(university)
     session.commit()
 def get_univ_by_field(field):

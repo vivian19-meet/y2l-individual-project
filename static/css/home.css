@@ -8,7 +8,7 @@ body{
     text-shadow: 3px 3px whitesmoke;    
     font-size: 60px;
     position: static;
-    background: rgba(199, 196, 196, 0.692);
+    background: rgba(214, 211, 211, 0.808);
     width: 400px;
     height: 200px;
     padding: 20px;
@@ -17,7 +17,7 @@ body{
 }
 .adm{
     background-image: url('images/abstract_art_black_and_white_red_wallpaper_1080p_hd.jpg');
-    border-radius: 10px;
+    border-radius: 6px;
     font-family: Forte;
     color: black;
     font-size: 34px;
@@ -26,25 +26,24 @@ body{
     width: 10px ;
     text-shadow: 1px 1px whitesmoke;    
 }
-#adm:hover{
-    background-color: lightgray;
-}
+
 #adm{
-    top:150px;
 	color: black;
 	text-decoration: none;
 	font: 20px arial, sans-serif;
 	color: black;
 	font-size: 25px;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-	background-color: rgb(179, 177, 177);
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 17px;
-    height: 200px;
-    bottom: 150px;
-}
 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px 60px;
+    height: 200px;
+    top: 900px;
+    background-image: url("btnbg.jpg");
+}
+#adm:hover{
+    background-color: lightgray;
+}
 .nav-link{
     color: gray;
 }
