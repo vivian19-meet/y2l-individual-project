@@ -1,0 +1,177 @@
+body{
+    background: url(intel.jpg) ;
+    background-size: 1300px 630px;
+    font-style: unset;
+}
+.nav-link{
+    color: gray;
+}
+.nav-link:hover{
+    color:black;
+    }
+#title{
+    position: fixed;
+    font-size: 25px;
+    left: 30px;
+}
+#sen{
+    position: fixed;
+    top: 130px;
+    left: 30px;
+    font-size: 20px;
+}
+#hayez{
+    position: fixed;
+    top: 960px;
+    left:50px;
+    width: 500px;
+    padding: 15px 15px 15px 15px;
+    background-color: tan;
+}
+#music{
+    position: fixed;
+    top: 1340px;
+    left:50px;
+    width: 500px;
+    padding: 15px 15px 15px 15px;
+    background-color: tan;
+}
+
+#lang{
+    position: fixed;
+    top: 200px;
+    left:50px;
+    width: 500px;
+    padding: 15px 15px 15px 15px;
+    background-color: tan;
+}
+#math{
+    position: fixed;
+    top: 580px;
+    left:50px;
+    width: 500px;
+    padding: 15px 15px 15px 15px;
+    background-color: tan;
+}
+#sport{
+    position: fixed;
+    top: 1720px;
+    left:50px;
+    width: 500px;
+    padding: 15px 15px 15px 15px;
+    background-color: tan;
+}
+#social{
+    position: fixed;
+    top: 2100px;
+    left:50px;
+    width: 500px;
+    padding: 15px 15px 15px 15px;
+    background-color: tan;
+}
+#personal{
+    position: fixed;
+    top: 2480px;
+    left:50px;
+    width: 500px;
+    padding: 15px 15px 15px 15px;
+    background-color: tan;
+}
+
+
+#ma{
+    position: fixed;
+    top: 580;
+    height: 160;
+    width: 200;
+}
+#hh{
+    position: fixed;
+    top: 960;
+    height: 160;
+    width: 200;
+}
+#mu{
+    position: fixed;
+    top: 1340;
+    height: 160;
+    width: 200;
+}
+#kk{
+    position: fixed;
+    top: 1720;
+    height: 160;
+    width: 200;
+}
+#so{
+    position: fixed;
+    top: 2100;
+    height: 160;
+    width: 200;
+}
+#in{
+    position: fixed;
+    top: 2480;
+    height: 160;
+    width: 200;
+}
+
+.box{
+    position:fixed;
+        background-image: url('images/abstract_art_black_and_white_red_wallpaper_1080p_hd.jpg');
+        border-radius: 6px;
+        font-family: Forte;
+        color: black;
+        padding: 5px 5px 5px 5px;
+        border-width: 0px;
+        width: 10px ;
+        text-shadow: 1px 1px whitesmoke;    
+        color: black;
+        text-decoration: none;
+        font: 20px arial, sans-serif;
+        color: black;
+        
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 30px 60px;
+        height: 200px;
+        top: 900px;
+        
+    }
+.box:hover{
+    color: black;
+}
+.animate {
+    color: rgb(39, 38, 38);
+    position: fixed;
+    left: 780px;
+    width: 200px;
+    height: 120px;
+    top: 180;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(187, 164, 137);
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example {
+    0%   {background-color:rgb(173, 173, 173); left:700px; top:0px;}
+    25%  {background-color:rgb(131, 98, 56); left:1000px; top:0px;}
+  /*  50%  {background-color:blue; left:200px; top:200px;}
+     75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+      50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  
+  /* Standard syntax */
+  @keyframes example {
+    0%   {background-color:red; left:700px; top:0px;}
+    25%  {background-color:yellow; left:1000px; top:0px;}
+  
+  }
+

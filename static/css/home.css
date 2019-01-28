@@ -42,6 +42,7 @@ body{
     background-image: url("btnbg.jpg");
 }
 #adm:hover{
+    color: darkgoldenrod;
     background-color: lightgray;
 }
 .nav-link{

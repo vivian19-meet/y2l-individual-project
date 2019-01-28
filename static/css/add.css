@@ -3,6 +3,9 @@ body{
     background: url(addg.jpg) ;
     background-size: 1290px 740px;
 }
+#container{
+  width: 1000px;
+}
 .nav-link{
     color: gray;
 }
