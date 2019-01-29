@@ -16,20 +16,23 @@
         </li>
 </ul>
 <div class="adminbar">
-<div class="adminbar" id="pic">
+    <br><br><br><br>
+<div class="ainbar" id="pic">
     <img  src="/static/css/book.png" width="80px" height="40px">
 </div>
 <style>div#pic{position: fixed;  top: 70px;  left: 580px; }</style>
     <form  method="POST">
         <br>
         <br>
-        <h1>Log In as admin</h1><br><br>
+        <h1 id="ha">Log In as admin</h1><br><br>
         <input class="form-control mr-sm-2"  type="text" name="code" id="code" placeholder="admin code" required autocomplete="off"><br>
         <br>
         <br>
+        <br><br>
         <div id="log_in" >
         <input  class="btn btn-outline-light" type="submit" value="Log In">
         <br>
+
     </form>
 </div>
 </div>
@@ -37,12 +40,14 @@
     wrong code!
 {% endif %}
     <style>
+        #ha{position: fixed;top: 180px; left: 500px}
         div.adminbar {
           position: fixed;
           border: 1px 1px 1px 1px burlywood;
           bottom: 210;
-          right: 520;
-          width: 300px;}
+          right: 420;
+          width: 500px;
+        padding: 20px 20px 20px 20px}
     </style>
 
      <style>

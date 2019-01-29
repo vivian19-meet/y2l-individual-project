@@ -4,8 +4,19 @@ body{
     background-size: 1290px 740px;
     color:rgb(167, 135, 95);
 }
-#adminbar{
-    border:2px 2px burlywood;
+.adminbar{
+    position: fixed;
+    width: 580px;
+    top: 50px;
+    height: 500px;
+
+    border-style: solid;
+    border:1px 1px burlywood;
+
+}
+#log_in{
+    position: fixed;
+    top: 420px; 
 }
 .nav-link{
     color: gray;

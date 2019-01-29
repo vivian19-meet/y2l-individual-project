@@ -7,6 +7,7 @@
             <link rel="stylesheet" type="text/css" href="static/css/test.css">
             <style></style>
       </head>  
+      <body >
     <ul class="nav nav-tabs" style="background-color: white">
             <li class="nav-item" style="color:gray">
                   <a class="nav-link" href="{{url_for('home')}}"> Home</a>
@@ -27,12 +28,8 @@
     <p id="sen">there is 7 kinds of intellegence, and while each individual excels in one kind, <br>
     we still have a chance in other kinds as well! choose the box you relate to most.</p> 
     <div id="wrapper">
-    {% if ll %}
-    <div class="animate">
-        <p> your intelligence is Linguistic you can excel at Marketing and Media or as a Lawyer</p>
-    </div>
-    {% endif %}
-    <a class="box" href="/lang">
+   
+    <a class="box" style="float: left" onclick="document.getElementById('ll').style.display = 'block'">
     <div id="lang">
         <p class="subtitle">Linguistic</p>
            <p>do you find it easy to learn new languages? <br>
@@ -41,91 +38,72 @@
              Are you Good at discussing and arguing? <br>
              do you prefer Literary topics as history and sociology than science and math?<br>
              do you enjoy Crossword puzzles? or do your friends Nickname you "a moving dictionary"?
-            <br> do you use fancy uniqe words?</p>
+            <br> do you use fancy uniqe words? if so,  your intelligence is Linguistic you can excel at Marketing and Media or as a Lawyer</p>
     </div></a>
 </div>
-{% if mm %}
-    <div id="ma" class="animate">
-        <p> your intelligence is Logical-Mathematical you can excel at accounting, Business Administration, finance, or at stock marketing </p>
-    </div>
-    {% endif %}
-    <a class="box" href="/math">
+<br><br><br><br><br>
+
+
+    <a class="box"  onclick="document.getElementById('ma').style.display = 'block'">
     <div id="math">
-        <p class="subtitle">Logical-Mathematica</p>
+        <p class="subtitle">Logical-Mathematical</p>
            <p>do you find it easy to imagine numbers and other data in your mind? <br>
              do you prefer science and math more than other subjects?<br>
              do you enjoy games that require deep logical-mathmatical thinking? (like sodoko)
-            <br> do you ever wonder what will happen if we change data in a mathematical problem?</p>
+            <br> do you ever wonder what will happen if we change data in a mathematical problem? if so, your intelligence is Logical-Mathematical you can excel at accounting, Business Administration, finance, or at stock marketing </p>
     </div></a>
 
-
-
-
-    {% if hh %}
-    <div id="hh" class="animate">
-        <p> your intelligence is Spatial you can excel at Architectural Engineering or Design </p>
-    </div>
-    {% endif %}
-    <a class="box" href="/hhh">
+    <a class="box"  onclick="document.getElementById('hh').style.display = 'block'">
     <div id="hayez">
         <p class="subtitle">Spatial</p>
            <p>do you find it easy to imagine an object after looking at it from different angels? <br>
              do you enjoy geometry more than algebra?<br>
              do you find ease in turning what you hear into pictures in your mind?
-            <br> do you doodle a lot while thinking?</p>
+            <br> do you doodle a lot while thinking?  your intelligence is Spatial you can excel at Architectural Engineering or Design </p>
     </div></a>
-    {% if mu %}
-    <div id="mu" class="animate">
-        <p> your intelligence is Musical you can excel at Musical careers! </p>
-    </div>
-    {% endif %}
-    <a class="box" href="/mu">
+
+    <a class="box"  onclick="document.getElementById('mu').style.display = 'block'">
     <div id="music">
-        <p class="subtitle"></p>
+        <p class="subtitle">musical</p>
            <p>do you easily notice the sounds around you? <br>
              do you like to study with music in the background?<br>
              do you play an instrument or would like to?
-            <br> can you memorize songs and sounds easily?</p>
+            <br> can you memorize songs and sounds easily? if so your intelligence is Musical you can excel at Musical careers!</p>
     </div></a>
-    {% if kk %}
-    <div id="kk" class="animate">
-        <p> your intelligence is Bodily-kinesthetic you can excel at athletic careers!</p>
-    </div>
-    {% endif %}
-    <a class="box" href="/kk">
+    
+
+
+    <a class="box"  onclick="document.getElementById('kk').style.display = 'block'">
     <div id="sport">
-        <p class="subtitle"></p>
+        <p class="subtitle">Bodily-kinesthetic</p>
            <p>do you practice any kind of sports constantly? <br>
              do you find it hard to stay at the same place for a long time?<br>
              do you use body language frequently?
-            <br> do you like sculpting,knitting or Pottery?</p>
+            <br> do you like sculpting,knitting or Pottery? if so  your intelligence is Bodily-kinesthetic you can excel at athletic careers!</p>
     </div></a>
-    {% if so %}
-    <div id="so" class="animate">
-        <p> your intelligence is Interpersonal you can excel at psychology,education or social work</p>
-    </div>
-    {% endif %}
-    <a class="box" href="/so">
+
+
+    <a class="box"  onclick="document.getElementById('so').style.display = 'block'">
     <div id="social">
-        <p class="subtitle"></p>
+        <p class="subtitle">Interpersonal</p>
            <p>do you consider yourself extroverted? <br>
              do people approach you for advice?<br>
              do you prefer team work than individual one?
-            <br> do people consider you a "leader"?</p>
+            <br> do people consider you a "leader"? <br>
+        if so, your intelligence is Interpersonal you can excel at psychology,education or social work</p>
     </div></a>
-    {% if ii %}
-    <div id="ii" class="animate">
-        <p> your intelligence is Intrapersonal! you can excel at Philosophy,Entrepreneurship, or as an Inventor! </p>
-    </div>
-    {% endif %}
-    <a class="box" href="/ii">
+
+
+    
+    <a class="box"  onclick="document.getElementById('ii').style.display = 'block'">
     <div id="personal">
-        <p class="subtitle"></p>
+        <p class="subtitle">Intrapersonal</p>
            <p>do you spend a long time thinking and imagining? <br>
              ever been called a Philosopher?<br>
              Are you self aware of your strengths and weaknesses?
-            <br> do you have a hobby that you like to practice alone?</p>
+            <br> do you have a hobby that you like to practice alone?<br> if so your intelligence is Intrapersonal! you can excel at Philosophy,Entrepreneurship, or as an Inventor! </p>
     </div></a>
+    
       </head>
-      <body>
+    </body>
 </html>
