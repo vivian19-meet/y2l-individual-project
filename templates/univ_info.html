@@ -37,7 +37,10 @@
 {{ u.location }} <br>
 <a id="link" href= {{ u.link }}>link to actual website</a><br><br>
 <div id="inf">
-  {{ u.fields }}  <br></div>
+  {% for f in u.fields  %}
+  {{f}} <br>
+  {% endfor %} --> 
+  <br></div>
 
 
 

@@ -76,7 +76,7 @@ def adminC():
 def addd():
     if request.method=="POST":
         add_univ(request.form["name"],request.form["location"],
-        request.form["fields"],request.form["logo"],request.form["link"],request.form["pics"].split(","))
+        request.form["fields"].split(","),request.form["logo"],request.form["link"],request.form["pics"].split(","))
         return render_template("add.html")
     else:
         return render_template("add.html")
